@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <div id="form-container">
+        <h3> Formulario De Contacto</h3>
+        <br>
+        <br>
+
+        <form>
+            <div>
+                <label for="name">Nombre y Apellido</label>
+                <input placeholder="Ingrese Nombre" id="name" type="text"  class="validate">
+            </div>
+            <div>
+                <label for="Mail">Correo Electronico</label>
+                <input placeholder="Su Correo Electronico" id="Mail" type="text"  class="validate">
+            </div>
+            <div>
+                <label for="tel">Tel</label>
+                <input placeholder="Numero de Telefono" id="Tel" type="text"  class="validate">
+            </div>
+            <div>
+                <label for="edition">Comentario</label>
+                <input placeholder="Comentario" id="edition" type="text"  class="validate">
+            </div>
+            <br>
+            <br>
+            <div>
+                <button class="btn waves-effect waves-light" type="button" id="save" onclick="saveCont()">Guardar Mensaje
+                    <i class="material-icons right">send</i>
+                  </button>
+             </div>         
+
+
+
+             
+        </form>
+
+
+        <br>
+      
+
+        
+        <div>
+            <button class="btn waves-effect waves-light" type="button" id="save" onclick="getCont()">Consultar de GET
+                <i class="material-icons right">send</i>
+              </button>
+         </div>   
+      
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
